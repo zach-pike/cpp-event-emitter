@@ -54,10 +54,15 @@ void EventEmitter<T>::emit(string evnt, T data) {
     //make a refrencee because im sick as shit of typing EventEmitter::callbacks, also used auto because im a lazy sack of shit
     vector<CallBack<T>>& list = EventEmitter<T>::callbacks[evnt];
 
+    //loop thru all the callbacks that are registered
     for (int i=0; i < list.size(); i++) {
+
+        //if its a once listener and its already been run, remove it from the list of callbacks
         if (list[i].callTimes > 0 && list[i].once) {
             list.erase(list.begin() + i);
         } else {
+
+            //if not, run the callback
             list[i].cb(data);
             list[i].callTimes++;
         }
