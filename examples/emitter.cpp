@@ -1,4 +1,4 @@
-#include "../include/eventemitter.hpp"
+#include "../event-emitter/eventemitter.hpp"
 #include <stdlib.h>
 #include <stdio.h>
 

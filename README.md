@@ -6,3 +6,7 @@ You can use this if you want but i don't reccomend because i threw this together
 
 # How to use
 look in ``examples/emitter.cpp`` for a basic test
+
+cd into examples and run ``./build.sh`` to compile the tests
+
+then cd into the build directory that got created and run ``./emitter``
