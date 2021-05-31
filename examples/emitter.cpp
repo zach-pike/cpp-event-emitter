@@ -17,7 +17,7 @@ int main() {
     });
 
     emitter.once("event", [](Testing data) {
-        printf("This will be printed only once! %d\n", data.myfloat);
+        printf("This will be printed only once! %f\n", data.myfloat);
     });
 
 
@@ -31,7 +31,7 @@ int main() {
 
     //increment vaue for fun
     data.myint++;
-    
+
     emitter.emit("event", data);
     emitter.emit("event", data);
     emitter.emit("event", data);
