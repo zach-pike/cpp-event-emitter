@@ -3,3 +3,6 @@ This is a header only library so just drag and drop the ``event-emitter`` direct
 
 # Still in developemnt and not to be used seriously 
 You can use this if you want but i don't reccomend because i threw this together in 50 minutes
+
+# How to use
+look in ``examples/emitter.cpp`` for a basic test
